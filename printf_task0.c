@@ -38,8 +38,10 @@ int _printf(const char *format, ...)
 		prichar_act += lenofst;
 		}
 		else if (*format == '%')
+		{
 			write(1, format, 1);
 		prichar_act++;
+		}
 	}
 		else
 			write(1, format, 1);
